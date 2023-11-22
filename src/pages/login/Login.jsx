@@ -5,6 +5,7 @@ import { AuthContext } from "../../context/AuthContext";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./login.css";
+import { api } from "../../lip/fetch-config";
 
 
 const Login = () => {
@@ -23,7 +24,7 @@ const Login = () => {
         e.preventDefault()
         dispatch({type: "LOGIN_START"})
         try {
-            const res = await axios.post("/auth/login", credentials)
+            const res = await api.post("/api/auth/login", credentials)
             dispatch({type: "LOGIN_SUCCESS", payload: res.data.details})
             navigate("/")
         } catch (err) {

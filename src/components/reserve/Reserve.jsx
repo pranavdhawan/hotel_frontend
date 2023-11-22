@@ -8,7 +8,7 @@ import { useContext } from 'react'
 import { SearchContext } from '../../context/SearchContext'
 import { useNavigate } from 'react-router-dom'
 import axios from "axios";
-
+import { api } from '../../lip/fetch-config'
 
 const Reserve = ({ setOpen, hotelId }) => {
 
@@ -56,7 +56,7 @@ const Reserve = ({ setOpen, hotelId }) => {
         try {
             await Promise.all(
                 selectedRooms.map((roomId) => {
-                    const res = axios.put(`/rooms/availability/${roomId}`, {
+                    const res = api.put(`/api/rooms/availability/${roomId}`, {
                         dates: alldates,
                     })
                     return res.data
