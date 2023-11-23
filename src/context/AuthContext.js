@@ -54,6 +54,11 @@ export const AuthContextProvider = ({ children }) => {
     localStorage.setItem("user", JSON.stringify(state.user));
   }, [state.user]);
 
+  const logout = () => {
+    // Dispatch the LOGOUT action when the user logs out
+    dispatch({ type: "LOGOUT" });
+  };
+
   return (
     <AuthContext.Provider
       value={{
@@ -61,6 +66,7 @@ export const AuthContextProvider = ({ children }) => {
         loading: state.loading,
         error: state.error,
         dispatch,
+        logout,
       }}
     >
       {children}
