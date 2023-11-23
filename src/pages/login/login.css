@@ -1,32 +1,76 @@
-.login {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .lContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .lInput{
-    height: 30px;
-    padding: 10px;
-  }
-  
-  .lButton {
-    border: none;
-    padding: 10px 20px;
-    background-color: #0071c2;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .lButton:disabled{
-    background-color: #0071c28c;
-    cursor: not-allowed;
-  }
+body {
+  background-color: #e5f0ef;
+  font-family: 'Poppins', sans-serif;
+}
+
+.loginContainer {
+  display: flex;
+  max-width: 710px;
+  margin-top: 10%;
+  margin-left: 28%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #675948;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginImage {
+  width: 1500px;
+  height: 400px;
+  max-width: 350px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.title{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.formContainer {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lInput {
+  height: 30px;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+}
+
+.lButton {
+  border: none;
+  padding: 0.5em 1.2em;
+  background-color: #675948;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.lButton:disabled {
+  background-color: #0071c28c;
+  cursor: not-allowed;
+}
+
+.lButton:hover {
+  background-color: #524434;
+}
+
+.linkHome {
+  margin-top: 10px;
+  margin-left: 10px;
+}

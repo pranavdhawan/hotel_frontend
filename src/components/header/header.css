@@ -1,6 +1,10 @@
+
+
 .header {
-  background-color: #003580;
-  color: white;
+  background-image: url('../images/forestroad.jpg');
+  background-size: cover;
+  background-position: 0% 50%;
+  color: rgb(225, 225, 225);
   display: flex;
   justify-content: center;
   position: relative;
@@ -29,7 +33,7 @@
 }
 
 .headerListItem.active {
-  border: 1px solid white;
+  border: 1px solid rgb(225, 225, 225);
   padding: 10px;
   border-radius: 20px;
 }
@@ -39,18 +43,19 @@
 }
 
 .headerBtn {
-  background-color: #0071c2;
+  background-color: 	#675948;
   color: white;
   font-weight: 500;
   border: none;
   padding: 10px;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .headerSearch {
   height: 30px;
   background-color: white;
-  border: 3px solid #febb02;
+  border: 3px solid #c4beb1;
   display: flex;
   align-items: center;
   justify-content: space-around;
