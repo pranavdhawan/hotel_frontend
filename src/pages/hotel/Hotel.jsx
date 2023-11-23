@@ -108,7 +108,7 @@ const Hotel = () => {
               Excellent location – {data.distance}m from center
             </span>
             <span className="hotelPriceHighlight">
-              Book a stay over ${data.cheapestPrice} at this property and get a
+              Book a stay over ₹{data.cheapestPrice} at this property and get a
               free airport taxi
             </span>
             <div className="hotelImages">
@@ -135,7 +135,7 @@ const Hotel = () => {
                   excellent location score of 9.8!
                 </span>
                 <h2>
-                  <b>${days * data.cheapestPrice * options.room}</b> ({days}{" "}
+                  <b>₹{days * data.cheapestPrice * options.room}</b> ({days}{" "}
                   nights)
                 </h2>
                 <button onClick={handleClick}>Reserve or Book Now!</button>
