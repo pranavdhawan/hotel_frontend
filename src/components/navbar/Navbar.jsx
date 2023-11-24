@@ -40,6 +40,7 @@ const Navbar = () => {
           </div>
         ) : (
           <div className="navItems">
+            <a href="https://admin-lbtj.onrender.com/" target="_blank">Admin</a>
             <button className="navButton" onClick={handleRegister}>
               Register
             </button>
